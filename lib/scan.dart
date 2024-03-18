@@ -15,18 +15,6 @@ class _ScancamState extends State<Scancam> {
     return Scaffold(
       backgroundColor: Colors.indigo,
       appBar: AppBar(
-        leading: IconButton(
-            onPressed: (() {
-              Navigator.pushReplacement(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => const Scan(),
-                  ));
-            }),
-            icon: const Icon(
-              Icons.arrow_back_outlined,
-              color: Colors.white,
-            )),
         backgroundColor: Colors.indigo,
         centerTitle: true,
       ),

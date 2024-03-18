@@ -5,7 +5,9 @@ import 'package:qrapp/scan.dart';
 import 'login.dart';
 
 class Scan extends StatefulWidget {
-  const Scan({super.key});
+   Scan({super.key,required this.rollno});
+
+  String rollno;
 
   @override
   State<Scan> createState() => _ScanState();
@@ -50,7 +52,7 @@ class _ScanState extends State<Scan> {
             height: 200,
             color: Colors.white,
             child: QrImageView(
-              data: '1234567890',
+              data: widget.rollno,
               version: QrVersions.auto,
               size: 200.0,
             ),
